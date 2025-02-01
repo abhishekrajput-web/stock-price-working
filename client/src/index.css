@@ -1,0 +1,16 @@
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .input-field:focus {
+    border-color: #2563eb;
+  }
+  .error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 4px;
+  }
