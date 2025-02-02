@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import databaseConnection from './connection/connection.js';
 import stockRoute from "./routes/stockRoute.js";
 import authRoute from "./routes/authRoute.js";
+import userRoutes from "./routes/users.js";
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(stockRoute);
 app.use("/api/v1/auth", authRoute);
+app.use('/api/users', userRoutes);
 
 const startServer = async () =>{
 
