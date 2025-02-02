@@ -13,14 +13,13 @@ app.use(cors());
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
-
 const PORT = process.env.PORT || 3000;
 
 app.use(stockRoute);
 app.use("/api/v1/auth", authRoute);
 
-
 const startServer = async () =>{
+
 try {
     databaseConnection(process.env.MONGODB_URI);
     app.listen(PORT, () =>{

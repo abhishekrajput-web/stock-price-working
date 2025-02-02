@@ -9,6 +9,7 @@ router.get('/scrape-etf', scrapeAndStoreETFData);
 // get stock data
 router.get('/stocks', getETFData);
 
-
 export default router;
+
+
 
